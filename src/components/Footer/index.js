@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
+import './style.css';
 
 export default function Footer() {
   return (
@@ -11,9 +12,15 @@ export default function Footer() {
                 <h3 id="contact" className="text-center">Reach Out</h3>
             </div>
             <div className="row mt-5">
-              <BsLinkedin className='col-sm d-flex justify-content-end' width="48" height="48" />
-              <BsGithub className='col-sm d-flex justify-content-center' width="48" height="48" />
-              <BsMailbox  className='col-sm d-flex justify-content-start' width="48" height="48" />
+              <a href="https://www.linkedin.com/in/thomas-mcgovern-076a4a199/" target="_blank" className='col-sm d-flex justify-content-end'>
+                <BsLinkedin />
+              </a>
+              <a href="https://github.com/TMcG1998" target="_blank" className='col-sm d-flex justify-content-center'>
+                <BsGithub />
+              </a>
+              <a href="mailto: thomasjmcgovern98@gmail.com" className='col-sm d-flex justify-content-start'>
+                <BsMailbox />
+              </a>
             </div>
       </section>
     </IconContext.Provider>

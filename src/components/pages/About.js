@@ -3,14 +3,11 @@ import React from 'react';
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About Me!</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+      Hi! My name is Thomas, but I tend to go by Tommy to most people who know me. I've had an interest in how the internet works ever since I could use a computer, and over the years that curiosity has led me to making a leap into web development.
+
+I spent 2 years at Rockland Community College getting an Associate's Degree in Computer Information Systems, and then did another year at the University at Buffalo learning more about Computer Science. From there I earned a certificate from Columbia University's web development boot camp and here I am!
       </p>
     </div>
   );
