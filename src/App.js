@@ -1,12 +1,9 @@
-
+import React from "react";
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        BANG
-      </header>
-    </div>
+    <PortfolioContainer />
   );
 }
 
