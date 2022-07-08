@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Header() {
     return (
-        <div></div>
+        <div>
+            <h1>Thomas McGovern</h1>
+        </div>
     )
 }
