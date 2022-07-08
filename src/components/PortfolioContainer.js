@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Footer from './Footer';
 
 export default function Portfolio() {
     const [currentPage, setCurrentPage] = useState('About');
@@ -26,6 +27,7 @@ export default function Portfolio() {
         <div>
           <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
           {renderPage()}
+          <Footer />
         </div>
       );
 }
