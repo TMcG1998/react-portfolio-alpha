@@ -4,8 +4,10 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
+import Header from './Header';
+import Portfolio from './pages/Portfolio';
 
-export default function Portfolio() {
+export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
@@ -25,9 +27,10 @@ export default function Portfolio() {
 
     return (
         <div>
-          <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-          {renderPage()}
-          <Footer />
+            <Header />
+            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+            {renderPage()}
+            <Footer />
         </div>
       );
 }
