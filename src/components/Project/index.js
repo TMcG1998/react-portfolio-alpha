@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { BsGithub } from 'react-icons/bs';
 
 const projectList = [
     // project 1
@@ -47,6 +48,20 @@ const projectList = [
 
 export default function Project() {
     return (
-        <div></div>
+        <div className="container mt-3 mb-5">
+            {projectList.map((project) => {
+                <div className="project row">
+                    <div className="col-sm">
+                        <div className="img-holder">
+                            <img className="project-img" href={project.image} />
+                        </div>
+                    </div>
+                    <div className="project-details col-sm">
+                        <h4 className="project-title">{project.title}</h4><a href={project.gitLink} target="_blank"><BsGithub /></a>
+                    <p><a href={project.deployLink}>Deployed Link</a></p>
+                    </div>
+                </div>
+            })}
+        </div>
     )
 }
