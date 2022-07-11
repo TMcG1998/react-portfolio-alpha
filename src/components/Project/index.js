@@ -1,5 +1,6 @@
 import React from "react";
 import { BsGithub } from 'react-icons/bs';
+import { IconContext } from 'react-icons';
 
 const projectList = [
     // project 1
@@ -46,14 +47,23 @@ const projectList = [
     }
 ]
 
+function checkImage(object) {
+    if(object.image === "") {
+        return <p>This application has no front end to display.</p>
+    } 
+    
+    return <img className="project-img"  style={{ maxWidth: 1000 }} src={object.image} />
+}
+
 export default function Project() {
     return (
+        <IconContext.Provider value={ { size: 30 } }>
         <div className="container mt-3 mb-5">
-            {projectList.map((project) => {
-                <div className="project row">
+            {projectList.map((project) => (
+                <div className="project row border border-primary p-1 m-1">
                     <div className="col-sm">
                         <div className="img-holder">
-                            <img className="project-img" href={project.image} />
+                            {checkImage(project)}
                         </div>
                     </div>
                     <div className="project-details col-sm">
@@ -61,7 +71,8 @@ export default function Project() {
                     <p><a href={project.deployLink}>Deployed Link</a></p>
                     </div>
                 </div>
-            })}
+            ))}
         </div>
+        </IconContext.Provider>
     )
 }
