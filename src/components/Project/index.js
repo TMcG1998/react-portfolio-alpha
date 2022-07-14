@@ -58,21 +58,21 @@ function checkImage(object) {
 export default function Project() {
     return (
         <IconContext.Provider value={ { size: 30 } }>
-        <div className="container mt-3 mb-5">
-            {projectList.map((project) => (
-                <div className="project row border border-primary p-1 m-1">
-                    <div className="col-sm">
-                        <div className="img-holder">
-                            {checkImage(project)}
+            <div className="container mt-3 mb-5">
+                {projectList.map((project) => (
+                    <div className="project row border border-primary p-1 m-1">
+                        <div className="col-sm">
+                            <div className="img-holder">
+                                {checkImage(project)}
+                            </div>
+                        </div>
+                        <div className="project-details col-sm">
+                            <h4 className="project-title">{project.title}</h4><a href={project.gitLink} target="_blank"><BsGithub /></a>
+                        <p><a href={project.deployLink}>Deployed Link</a></p>
                         </div>
                     </div>
-                    <div className="project-details col-sm">
-                        <h4 className="project-title">{project.title}</h4><a href={project.gitLink} target="_blank"><BsGithub /></a>
-                    <p><a href={project.deployLink}>Deployed Link</a></p>
-                    </div>
-                </div>
-            ))}
-        </div>
+                ))}
+            </div>
         </IconContext.Provider>
     )
 }
