@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-port/static/css/main.23986480.css",
-    "main.js": "/react-port/static/js/main.a4c3c55a.js",
-    "static/js/787.510e8dec.chunk.js": "/react-port/static/js/787.510e8dec.chunk.js",
-    "static/media/Resume Template 1.pdf": "/react-port/static/media/Resume Template 1.aea2aafebcae6898a4bf.pdf",
-    "static/media/profile.jpg": "/react-port/static/media/profile.f124cbd49adb235ec8f4.jpg",
-    "index.html": "/react-port/index.html",
-    "main.23986480.css.map": "/react-port/static/css/main.23986480.css.map",
-    "main.a4c3c55a.js.map": "/react-port/static/js/main.a4c3c55a.js.map",
-    "787.510e8dec.chunk.js.map": "/react-port/static/js/787.510e8dec.chunk.js.map"
+    "main.css": "/react-portfolio-alpha/static/css/main.23986480.css",
+    "main.js": "/react-portfolio-alpha/static/js/main.5fd7ecd9.js",
+    "static/js/787.510e8dec.chunk.js": "/react-portfolio-alpha/static/js/787.510e8dec.chunk.js",
+    "static/media/Resume Template 1.pdf": "/react-portfolio-alpha/static/media/Resume Template 1.aea2aafebcae6898a4bf.pdf",
+    "static/media/profile.jpg": "/react-portfolio-alpha/static/media/profile.f124cbd49adb235ec8f4.jpg",
+    "index.html": "/react-portfolio-alpha/index.html",
+    "main.23986480.css.map": "/react-portfolio-alpha/static/css/main.23986480.css.map",
+    "main.5fd7ecd9.js.map": "/react-portfolio-alpha/static/js/main.5fd7ecd9.js.map",
+    "787.510e8dec.chunk.js.map": "/react-portfolio-alpha/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23986480.css",
-    "static/js/main.a4c3c55a.js"
+    "static/js/main.5fd7ecd9.js"
   ]
 }
